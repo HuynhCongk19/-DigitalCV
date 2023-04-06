@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+  .info-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 300px;
+  }
+
+  .info-navbar a:not(:last-child) {
+    border-right: none;
+  }
+  .nav {
+    padding: 14px;
+  }
+  .info-navbar a {
+    padding-left: 10vw;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    font-size: 24px;
+  }
+
+  .info-navbar a.nv-name {
+    display: none;
+  }
+
+  .award-info,
+  .aw-3 {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  /* CĂN CHỈNH CHO HÌNH ẢNH CHỨNG CHỈ */
+  .award-img {
+    width: 90vw;
+    height: auto;
+  }
+  .project-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding-bottom: 30px;
+  }
+  .pj-img {
+    width: 100%;
+    height: auto;
+  }
+}

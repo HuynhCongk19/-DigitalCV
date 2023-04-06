@@ -1,0 +1,490 @@
+:root {
+  --solid-color: #ced4da;
+  --target-color: #dee2e67b;
+  --personal-info: #dee2e6a9;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* CHỈNH CHO TOÀN BỘ TRANG */
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* THUỘC TÍNH CHO CÁC MỤC CONTAINER */
+/* section > .container {
+  width: 1470px;
+  margin: auto;
+
+  padding: 30px 50px;
+} */
+
+/* THÊM ẢNH VÀ CĂN CHỈNH HEADER  */
+header {
+  position: relative;
+  /* THÊM ẢNH VÀ TẠO MỘT LỚP ĐEN MỜ */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(../images/banner1.png);
+  background-size: cover;
+
+  /* để cho hình ảnh căn giữa từ phía trên*/
+  background-position: center top;
+  height: 60vh;
+  width: auto;
+}
+
+/*
+
+
+
+
+CĂN CHỈNH THÔNG TIN CÁ NHÂN */
+.info-banner {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+  color: #f7f7f7;
+}
+
+/* CĂN CHINHT THÔNG TIN TIÊU ĐỀ H1  */
+.info-banner h1 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+}
+
+/*
+
+
+
+CĂN CHỈNH CHO NAVBAR */
+.info-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  border-collapse: collapse;
+}
+
+/* TÙY CỈNH THÔNG TIN BÊN TRONG THẺ a */
+.info-navbar a {
+  /* chỉnh cho thông tin vào chính giữa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  /* tạo đường kẻ viền */
+
+  width: 10%;
+}
+
+/* chỉnh thông tin về ảnh đại diện trong navbar */
+.nv-name {
+  flex-basis: 400px;
+  width: 25%;
+  border-right: 1px solid var(--solid-color);
+  padding: 27px 0;
+}
+
+/* tùy chỉnh thuộc tính cho ảnh đại diện */
+.avatar {
+  transform: scale(8);
+  z-index: 3;
+  width: 30px;
+  height: auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.info-navbar a:not(:last-child) {
+  border-right: 1px solid var(--solid-color);
+}
+/* tùy chỉnh từng thành phần trong navbar */
+.nav {
+  flex-basis: 180px;
+  font-size: 14px;
+  /* border-left: 1px solid #0c050580;
+  border-right: 1px solid #0c050580; */
+  padding: 27px 0;
+}
+
+/* 
+
+
+
+
+KHU VỰC CHỈNH THÔNG TIN CÁ NHÂN VÀ MỤC TIÊU NGHÊ NGHIỆP */
+
+/* chỉnh màu của box Mục tiêu nghề nghiệp */
+.target {
+  background-color: var(--target-color);
+}
+
+/* chỉnh title cho hai mục thông tin và mục tiêu */
+.section-title {
+  margin: 45px 0;
+  font-size: 34px;
+}
+
+/* căn chỉnh phần Thông tin cá nhân */
+.personal-info {
+  background-color: var(--personal-info);
+}
+
+/* căn chỉnh cho các thông tin bên trong mục THÔNG TIN CÁ NHÂN */
+.info {
+  list-style-type: none;
+  margin: 40px 0;
+  line-height: 1.7;
+}
+
+/* chỉnh các thuộc tính của icon trong navbar và trong info */
+.info i,
+.info-navbar i {
+  color: #199cdb;
+}
+
+/* 
+
+
+
+
+PHẦN TÙY CHỈNH CHO CÁC KINH NGHIỆM - HỌC VẤN - HOẠT ĐỘNG 
+              SỞ THÍCH - NGÔN NGỮ - KỸ NĂNG */
+/* CĂN CHỈNH CHUNG CHO CÁC MỤC             */
+
+.job-info .card {
+  height: 100%;
+}
+
+.job-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+
+/* căn chỉnh cho khối box lớn */
+.box-infomation {
+  border: 2.5px solid rgba(128, 128, 128, 0.336);
+}
+/* chỉnh khối chứa tên box - icon */
+.title-job {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto auto;
+}
+/* căn chỉnh phần tên của box */
+.title-job-info {
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  /* background-color: rgba(255, 0, 0, 0.37); */
+  height: 150px;
+  margin-left: 10px;
+}
+
+/* chỉnh các icon minh họa tron box */
+.icon-job-info {
+  font-size: 50px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+/* đổi lại màu cho icon */
+.icon-job-info i {
+  color: rgba(0, 0, 0, 0.623);
+}
+
+/* chỉnh khối chứa thông tin chi tiết */
+.information-info {
+  margin-bottom: 10px;
+  /* background-color: antiquewhite; */
+  grid-column: 1/3;
+  margin-left: 50px;
+  line-height: 1.7;
+}
+
+/* chỉnh margin cho khối nhỏ */
+.in-info {
+  margin-bottom: 40px;
+}
+
+/* Tùy chỉnh thuộc tính cho chữ "Hiện tại" */
+.job-info span {
+  display: inline-block;
+  width: 70px;
+  height: 26px;
+  border: 2px solid #199cdb;
+  background-color: #199cdb;
+  text-align: center;
+  font-style: italic;
+  color: #ffff;
+  border-radius: 8px;
+}
+
+/* tạo dấu chấm màu xanh đầu khối nhỏ */
+.job-info .point::before {
+  position: absolute;
+  content: "•";
+  color: #199cdb;
+  font-size: 40px;
+  margin: -17px 0 0 -20px;
+}
+
+/* đổi màu cho các icon cho phù hợp */
+.icon-hoppy i {
+  color: #c1c1c1;
+}
+
+/* tạo đường tròn bao bên ngoài các icon */
+.ic-icon {
+  width: 50px;
+  height: 50px; /*chỉnh kích thước của hình tròn */
+
+  border-radius: 50%; /*50% để tạo viền thành hình tròn  */
+  border: 2px solid #90cfed;
+  text-align: center; /*căn giữa cho các icon bên trong8*/
+  padding-top: 9px; /* căn theo chiều dọc để icon vô giữa*/
+}
+
+/* PHẦN CHỈNH THUỘC TÍNH CHO NGÔN NGỮ - KỸ NĂNG */
+/* Tạo ba gạch kẻ thể hiện kỹ năng bằng grid */
+.level {
+  display: grid;
+  grid-template-columns: 45px 45px 45px;
+  gap: 7px;
+  margin: 8px 0 30px;
+}
+
+/* hai gạch xanh tương ứng với trình độ đã đạt được */
+.level-1,
+.level-2 {
+  height: 6px;
+  background-color: #1270ff;
+  border: 1px solid #dcdcdc;
+
+  border-radius: 3px;
+}
+
+/* gạch trắng tương ứng với trình độ chưa đạt được */
+.level-3 {
+  height: 6px;
+  background-color: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+
+/* 
+
+
+
+
+CĂN CHỈNH SECTION CHỨNG CHỈ GIẢI THƯỞNG */
+#certificate {
+  background-color: #f7f7f7;
+}
+
+/*### PHẦN TÙY CHỈNH CHO CÁC CHỨNG CHỈ - GIẢI THƯỞNG ###*/
+
+/* CHỈNH CHUNG CHO CÁC CHỨNG CHỈ */
+.award-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+  padding-bottom: 30px;
+}
+/* .award-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+} */
+/* ĐỊNH NGHĨA KIỂU HIỂN THỊ CHO TẤT CẢ CÁC BOX */
+.award-info,
+.aw-3 {
+  display: flex;
+}
+
+/* TÙY CHỈNH CHO THÔNG TIN VỀ TÊN CHỨNG CHỈ */
+/* chọn tới thẻ p đầu tiên của class aw-info  */
+.aw-info p:first-child {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+/* CĂN CHỈNH CHO TEX TRONG BOX  */
+.aw-info {
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+/* TẠO ĐƯỜNG KẺ BÊN DƯỚI */
+.aw-2,
+.aw-1 {
+  border-bottom: 2px solid #d6c08d;
+}
+/*
+
+
+
+
+TÙY CHỈNH THUỘC TÍNH CHO CÁC DỰ ÁN*/
+.project-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 30px;
+  padding-bottom: 30px;
+}
+
+/* chỉnh grid cho "Mô tả", "Nhiệm vụ", "Công nghệ" */
+.item1,
+.item2,
+.item3 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  line-height: 1.5;
+}
+
+/* tạo khung cho các thông tin */
+/* chọn tất cả thẻ con đầu tiên của project-1,2,3*/
+.project-1 > *,
+.project-2 > *,
+.project-3 > * {
+  border: 2px solid rgba(128, 128, 128, 0.336);
+  border-collapse: collapse;
+  align-items: stretch;
+}
+
+/* chỉnh lại kích thước của hình ảnh minh họa các dự án */
+.pj-img {
+  width: 100%;
+  height: auto;
+}
+
+/* chỉnh lại tên của các dự án đã làm */
+.pj-name {
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.project-2 .item3 {
+  height: 71px;
+}
+.project-3 .item3 {
+  height: 95px;
+}
+/* căn chỉnh mục thời gian - Funix - nghề */
+.pj-time {
+  display: flex;
+  padding-left: 20px;
+}
+
+/* thụt thẻ p của mục pj-time vào 15px cho giống mẫu */
+.pj-time p {
+  margin: 15px;
+}
+
+/* chỉnh margin thẻ các thẻ p mục "Mô tả", "Nhiệm vụ", "Công nghệ"  */
+.project-box p {
+  margin: 10px 0 10px 10px;
+}
+
+/* chỉnh số 2021 cho gống mẫu */
+/* chọn thẻ con đầu tiên của lớp pj-time */
+.pj-time p:first-child {
+  width: 70px;
+  height: 30px;
+  border: 2px solid #199cdb;
+  background-color: #199cdb;
+  text-align: center;
+  padding-top: 5px;
+  color: #dcdcdc;
+  border-radius: 30px;
+}
+/*
+
+
+
+
+
+TÙY CHỈNH THUỘC TÍNH CHO FOOTER */
+/* chỉnh khối footer để chứa box bên trong,
+cách đáy trang 50px, tô màu */
+.footer-contact {
+  position: relative;
+  margin-bottom: 50px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #dee2e67b;
+}
+
+/* chỉnh thông tin bên trong vào giữa footer */
+.describe-contrac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* set lại thuộc tính thẻ a cho phù hợp */
+footer a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+/* đổi màu icon, tăng kích thước */
+footer i {
+  color: #199cdb;
+  font-size: 30px;
+}
+@media screen and (min-width: 992px) {
+  /* TẠO ĐƯỜNG KẺ GIỮA BẰNG PHẦN TỬ GIẢ */
+  .aw-2::before {
+    content: "";
+    position: relative;
+    top: 0; /*vị trí của đường viền */
+    left: -13px;
+    width: 2px; /* Chiều rộng của đường viền */
+    height: 100%; /* Chiều cao của đường viền là 100% vì muốn ở bên phải toàn bộ div */
+    background-color: hsl(42, 47%, 70%); /* Màu sắc đường viền */
+  }
+  .award-info,
+  .aw-3 {
+    display: flex;
+  }
+
+  /* CĂN CHỈNH CHO HÌNH ẢNH CHỨNG CHỈ */
+  .award-img {
+    width: 45%;
+  }
+
+  .award-img img {
+    width: 100%;
+    height: auto;
+  }
+  /* TẠO KHOẢNG TRỐNG TRÊN - DƯỚI  CHO BOX 1 */
+  .aw-1 {
+    padding: 40px 0 40px;
+  }
+
+  /* TẠO KHOẢNG TRỐNG TRÊN DƯỚI - TRÁI PHẢI CHO BOX 2 */
+  .aw-2 {
+    padding: 40px 30px;
+  }
+}

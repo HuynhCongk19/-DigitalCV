@@ -1,0 +1,90 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  :root {
+    --solid-color: #ced4da;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .nv-name {
+    flex-basis: 68px;
+    width: 5%;
+    border-right: 1px solid var(--solid-color);
+    padding: 38px 0;
+  }
+
+  .info-navbar a:first-child {
+    border-left: 1px solid var(--solid-color);
+  }
+
+  .info-navbar a {
+    border-right: 1px solid var(--solid-color);
+  }
+  .job-info .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 131vh;
+  }
+  .job-info .col {
+    flex: auto;
+    max-width: 50vw;
+    align-self: baseline;
+    padding: 14px;
+  }
+
+  .award-detail {
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    padding-bottom: 30px;
+  }
+  .aw-2::before {
+    content: "";
+    position: relative;
+    top: 0; /*vị trí của đường viền */
+    left: -13px;
+    width: 2px; /* Chiều rộng của đường viền */
+    height: 100%; /* Chiều cao của đường viền là 100% vì muốn ở bên phải toàn bộ div */
+    background-color: hsl(42, 47%, 70%); /* Màu sắc đường viền */
+    z-index: 10;
+  }
+  .award-info,
+  .aw-3 {
+    display: block;
+    width: 45vw;
+    /* flex-direction: column; */
+  }
+
+  /* CĂN CHỈNH CHO HÌNH ẢNH CHỨNG CHỈ */
+  .award-img {
+    width: 100%;
+  }
+
+  .award-img img {
+    width: 100%;
+    height: auto;
+  }
+  /* TẠO KHOẢNG TRỐNG TRÊN - DƯỚI  CHO BOX 1 */
+  .aw-1,
+  .aw-3 {
+    padding: 40px 0 40px;
+  }
+
+  /* TẠO KHOẢNG TRỐNG TRÊN DƯỚI - TRÁI PHẢI CHO BOX 2 */
+  .aw-2 {
+    padding: 40px 0 40px 0px;
+  }
+
+  .project-3 .item3 {
+    height: 119px;
+  }
+}
