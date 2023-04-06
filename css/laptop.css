@@ -1,16 +1,30 @@
+/* khai báo biến chứa mã màu */
 :root {
   --solid-color: #ced4da;
   --target-color: #dee2e67b;
   --personal-info: #dee2e6a9;
+  --text-color: #495057;
 }
-
 * {
   margin: 0px;
   box-sizing: border-box;
 }
+/* CHỈNH LẠI MÀU CHO VĂN BẢN */
+a,
+p,
+h1 {
+  color: var(--text-color);
+}
 
+/* tạo class màu nền */
 .bg-grey {
   background: #f7f7f7;
+}
+.bg-blue {
+  background-color: #1c7ed6;
+}
+.bg-pj-gray {
+  background-color: var(--solid-color);
 }
 
 /* CHỈNH CHO TOÀN BỘ TRANG */
@@ -453,6 +467,27 @@ footer i {
   color: #199cdb;
   font-size: 30px;
 }
+
+/* lớp màu nền trong suốt để ẩn màu card - dùng cho trang digital-cv */
+.project-charter .transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* lớp tạo đường kẻ gạch màu xanh dương cho timeline */
+.border-custom {
+  border-bottom: 2px dotted #199cdb;
+}
+/* đổi màu icon cho timeline */
+.bg-icon {
+  background-color: #9775fa;
+}
+
+/* xóa gạch chân cho project */
+#project a:link {
+  text-decoration: none;
+}
+
+/* chỉnh lại giao diện khi kích thước vượt qua 992px */
 @media screen and (min-width: 992px) {
   /* TẠO ĐƯỜNG KẺ GIỮA BẰNG PHẦN TỬ GIẢ */
   .aw-2::before {
@@ -464,6 +499,8 @@ footer i {
     height: 100%; /* Chiều cao của đường viền là 100% vì muốn ở bên phải toàn bộ div */
     background-color: hsl(42, 47%, 70%); /* Màu sắc đường viền */
   }
+
+  /* chỉnh thuộc tính cho các chứng chỉ giải thưởng */
   .award-info,
   .aw-3 {
     display: flex;
@@ -473,7 +510,7 @@ footer i {
   .award-img {
     width: 45%;
   }
-
+  /* set lại kích thước cho ảnh chứng chỉ */
   .award-img img {
     width: 100%;
     height: auto;
