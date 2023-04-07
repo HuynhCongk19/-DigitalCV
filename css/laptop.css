@@ -15,19 +15,14 @@
 }
 /* CHỈNH LẠI MÀU CHO VĂN BẢN */
 a,
-p {
+p,
+h1 {
   color: var(--text-color);
 }
 
 /* tạo class màu nền */
-.bg-grey {
-  background: var(--solid-color);
-}
 .bg-blue {
   background-color: var(--bg-blue);
-}
-.bg-pj-gray {
-  background-color: var(--solid-color);
 }
 
 /* CHỈNH CHO TOÀN BỘ TRANG */
@@ -110,7 +105,7 @@ CĂN CHỈNH CHO NAVBAR */
 .nv-name {
   flex-basis: 400px;
   width: 25%;
-  border-right: 1px solid var(--solid-color);
+  border-right: 1px solid var(--target-color);
   padding: 27px 0;
 }
 
@@ -216,11 +211,10 @@ PHẦN TÙY CHỈNH CHO CÁC KINH NGHIỆM - HỌC VẤN - HOẠT ĐỘNG
 .ic-icon {
   width: 50px;
   height: 50px; /*chỉnh kích thước của hình tròn */
-
   border-radius: 50%; /*50% để tạo viền thành hình tròn  */
   border: 2px solid var(--bg-blue-100);
   text-align: center; /*căn giữa cho các icon bên trong8*/
-  padding-top: 9px; /* căn theo chiều dọc để icon vô giữa*/
+  padding-top: 15px; /* căn theo chiều dọc để icon vô giữa*/
 }
 
 /* PHẦN CHỈNH THUỘC TÍNH CHO NGÔN NGỮ - KỸ NĂNG */
@@ -257,7 +251,7 @@ PHẦN TÙY CHỈNH CHO CÁC KINH NGHIỆM - HỌC VẤN - HOẠT ĐỘNG
 
 CĂN CHỈNH SECTION CHỨNG CHỈ GIẢI THƯỞNG */
 #certificate {
-  background-color: var(--solid-color);
+  background-color: var(--target-color);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 

@@ -30,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 131vh;
+    height: 1580px;
   }
   .job-info .col {
     flex: auto;
