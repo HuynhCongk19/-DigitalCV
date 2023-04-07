@@ -30,9 +30,20 @@
     flex-direction: column;
   }
 
+  .award-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* tạo viền gạch chân cho chứng chỉ 3 - chỉ áp dụng cho giao diện mobile */
+  .aw-3 {
+    border-bottom: 2px solid var(--award-color);
+  }
   /* CĂN CHỈNH CHO HÌNH ẢNH CHỨNG CHỈ */
-  .award-img {
-    width: 90vw;
+  .award-img img {
+    width: 100%;
     height: auto;
   }
   .project-box {
