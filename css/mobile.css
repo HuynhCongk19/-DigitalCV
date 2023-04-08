@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+  /* set lại navbar thành cột dọc */
   .info-navbar {
     display: flex;
     flex-direction: column;
@@ -6,12 +7,14 @@
     height: 300px;
   }
 
+  /* bỏ đường viền ô cuối */
   .info-navbar a:not(:last-child) {
     border-right: none;
   }
   .nav {
     padding: 14px;
   }
+  /* chỉnh nội dung căn lề trái */
   .info-navbar a {
     padding-left: 10vw;
     display: flex;
@@ -19,17 +22,18 @@
     width: auto;
     font-size: 24px;
   }
-
+  /* bỏ ô chứa ảnh */
   .info-navbar a.nv-name {
     display: none;
   }
 
+  /* set nội dung và hình ảnh thành một cột */
   .award-info,
   .aw-3 {
-    display: inline-flex;
     flex-direction: column;
   }
 
+  /* chứng chỉ giải thưởng hiện thành một cột */
   .award-detail {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,6 +50,7 @@
     width: 100%;
     height: auto;
   }
+  /* tất cả dự án thành một cột */
   .project-box {
     display: grid;
     grid-template-columns: 1fr;
