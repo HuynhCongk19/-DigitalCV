@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="./css/mobile.css">
 	<link rel="stylesheet" href="./css/tablet.css">
 	<link rel="stylesheet" href="./css/font.css">
-	<link rel="stylesheet" href="css/css/bootstrap.min.css">
 	<title>Assignment 03</title>
 </head>
 <body>
@@ -37,7 +36,7 @@
 
 
 	<section  class=" about">
-			<div class="row justify-content-between">
+			<div class="row justify-content-between" style="--bs-gutter-x: 0">
 				<div class="col-md target px-5">
 					<h1 class="my-5 ps-2 ">Mục tiêu nghề nghiệp</h1>
 					<p class="lh-base ps-2">
@@ -49,7 +48,7 @@
 					</p>
 					
 				</div>
-				<div class="col-md personal-info px-3">
+				<div class="col-md personal-info px-5">
 					<h1 class="m-4 my-5 " >Thông tin cá nhân</h1>
 					<ul class="info">
 						<li><span>Giới tính</span> : Nam</li>
@@ -84,15 +83,14 @@
 						<div class="card-body ">
 						<!-- tạo một hàng hai cột để chia phần nội dung và icon -->
 							<div class="row align-items-center py-3">
-								<div class="col-md-9" ><h1>Kinh nghiệm</h1></div>
-								<div class="h2 col-md-3 justify-content-center"> <i class="ic-toolbox"></i></div>
+								<div class="col-9" ><h1>Kinh nghiệm</h1></div>
+								<div class="h2 col-3 justify-content-center"> <i class="ic-toolbox"></i></div>
 							</div>
 							<!-- phần đặt nội dung cho box -->
 							<div class="card-text point ms-4 me-2">
 								<p><strong>Đồ án môn học trên trường</strong></p>
 								<p>01/2023 - <span>Hiện tại</span></p>
-							<p>Full Stack Developer</p>
-							<p>Full Stack Developer</p>
+							<p>Full Stack Developer</p>							
 							<p>- Xây dựng, phát triển Website đấu giá sản phẩm.</p>
 							<p>- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL,
 								SQLServer, NoSQL, …) và viết được các câu truy vấn.</p>
@@ -115,8 +113,8 @@
 						<div class="card ">
 							<div class="card-body ">
 								<div class="row align-items-center py-3">
-									<div class="col-md-9" ><h1>Học vấn</h1></div>
-									<div class="h2 col-md-3 justify-content-center"> <i class="ic-pencil"></i></div>
+									<div class="col-9" ><h1>Học vấn</h1></div>
+									<div class="h2 col-3 justify-content-center"> <i class="ic-pencil"></i></div>
 								</div>
 								<!-- phần nội dung của box học vấn -->
 								<div class="card-text point ms-4 me-2">
@@ -143,8 +141,8 @@
 								<div class="card-body ">
 									<!-- phần tiêu đề và icon -->
 									<div class="row align-items-center py-3">
-										<div class="col-md-9" ><h1>Hoạt động</h1></div>
-										<div class="h2 col-md-3 justify-content-center"> <i class="ic-toolbox"></i></div>
+										<div class="col-9" ><h1>Hoạt động</h1></div>
+										<div class="h2 col-3 justify-content-center"> <i class="ic-toolbox"></i></div>
 									</div>
 									<!-- phần nội dung box hoạt động -->
 									<div class="card-text point ms-4 me-2">
@@ -169,8 +167,8 @@
 						<div class="card-body ">
 							<!-- tiêu đề và icon box sở thích -->
 							<div class="row align-items-center py-3">
-								<div class="col-md-9" ><h1>Sở thích</h1></div>
-								<div class="h2 col-md-3 justify-content-center"> <i class="ic-telescope"></i></div>
+								<div class="col-9" ><h1>Sở thích</h1></div>
+								<div class="h2 col-3 justify-content-center"> <i class="ic-telescope"></i></div>
 							</div>
 							<!-- các icon của từng sở thích -->
 							<div class="card-text ms-2 me-2 my-4 d-flex justify-content-between">								
@@ -197,8 +195,8 @@
 							<div class="card-body ">
 								<!-- tiêu đề và icon box Ngôn ngữ -->
 								<div class="row align-items-center py-3">
-									<div class="col-md-9" ><h1>Ngôn ngữ</h1></div>
-									<div class="h2 col-md-3 justify-content-center"> <i class="ic-pencil"></i></div>
+									<div class="col-9" ><h1>Ngôn ngữ</h1></div>
+									<div class="h2 col-3 justify-content-center"> <i class="ic-pencil"></i></div>
 								</div>
 								<!-- trình độ tiếng Anh -->
 								<div class="card-text ms-4 me-2">
@@ -229,8 +227,8 @@
 								<div class="card-body ">
 									<!-- tiêu đề và icon của box kỹ năng -->
 									<div class="row align-items-center py-3">
-										<div class="col-md-9" ><h1>Kỹ năng</h1></div>
-										<div class="h2 col-md-3 justify-content-center"> <i class="ic-tools-2"></i></div>
+										<div class="col-9" ><h1>Kỹ năng</h1></div>
+										<div class="h2 col-3 justify-content-center"> <i class="ic-tools-2"></i></div>
 									</div>
 
 									<!-- Thông tin chi tiết về ô kỹ năng -->								
@@ -282,33 +280,39 @@
 			<!-- Khối chứa các box lớn - nơi đặt css  để chia hàng, chia cột -->
 			<div class="award-detail">
 					<!-- khối chứng chỉ môn web -->
-					<div class="award-info aw-1 "> 
-						<div  class="award-img"><img src="images/Cert_WEB.png" alt="ảnh chứng nhận môn Web"></div>
-						<!-- thông tin về chứng chỉ -->
-						<div class="aw-info">
-							<p>Chứng chỉ lập trình web - funix</p>
-						<p>- Chứng chỉ thuộc chương trình CCDN</p>
-						<p>- GPA: 8.6</p>
+					<div class="card-award aw-1">	
+						<div class="award-info  "> 
+							<div  class="award-img"><img src="images/Cert_WEB.png" alt="ảnh chứng nhận môn Web"></div>
+							<!-- thông tin về chứng chỉ -->
+							<div class="aw-info">
+								<p>Chứng chỉ lập trình web - funix</p>
+							<p>- Chứng chỉ thuộc chương trình CCDN</p>
+							<p>- GPA: 8.6</p>
+							</div>
 						</div>
 					</div>
 					<!-- Khối chứng chỉ môn Javascript -->
-					<div class="award-info aw-2 divider"> 
-						<div class="award-img" ><img src="images/Cert_PRF.png" alt="ảnh chứng nhận môn LT Javascript"></div>
-						<!-- Thông tin chi tiết về chứng chỉ -->
-						<div class="aw-info">
-							<p>Chứng chỉ lập trình Javascript - funix</p>
-						<p>- Chứng chỉ thuộc chương trình CCDN</p>
-						<p>- GPA:8.9</p>
+					<div class="card-award aw-2">
+						<div class="award-info  "> 
+								<div class="award-img" ><img src="images/Cert_PRF.png" alt="ảnh chứng nhận môn LT Javascript"></div>
+								<!-- Thông tin chi tiết về chứng chỉ -->
+								<div class="aw-info">
+									<p>Chứng chỉ lập trình Javascript - funix</p>
+								<p>- Chứng chỉ thuộc chương trình CCDN</p>
+								<p>- GPA:8.9</p>
+								</div>
 						</div>
 					</div>
 					<!-- Khối chứa chứng chỉ môn CSDL -->
-					<div class="awrad-info aw-3"> 
-						<div class="award-img"><img src="images/Cert_DBI.png" alt="ảnh chứng nhận môn LT CSDL"></div>
-						<!-- Thông tin mô tả về chứng chỉ -->
-						<div class="aw-info">
-						<p>Chứng chỉ lập trình Database - funix</p>
-						<p>- Chứng chỉ thuộc chương trình CCDN</p>
-						<p>- GPA: 8.0</p>
+					<div class="card-award ">
+						<div class="awrad-info aw-3 "> 
+								<div class="award-img"><img src="images/Cert_DBI.png" alt="ảnh chứng nhận môn LT CSDL"></div>
+								<!-- Thông tin mô tả về chứng chỉ -->
+								<div class="aw-info">
+								<p>Chứng chỉ lập trình Database - funix</p>
+								<p>- Chứng chỉ thuộc chương trình CCDN</p>
+								<p>- GPA: 8.0</p>
+								</div>							
 						</div>
 					</div>
 			
@@ -332,8 +336,10 @@
 							<!-- khối chứa thông tin về thời gian -->
 							<div class="pj-time">
 								<p>2021</p>
-								<p><i class="icon-user-1">Funix</i></p>
-								<p><i class="icon-lamp">Developer</i></p>
+								<div class="pj-title">
+									<p><i class="icon-user-1 ">Funix</i></p>
+									<p><i class="icon-lamp ">Developer</i></p>
+								</div>
 							</div>
 							<!-- khối mô tả dự án -->
 							<div class="item1">
@@ -362,8 +368,10 @@
 							<!-- khối chứa thông tin về thời gian -->
 							<div class="pj-time">
 								<p>2021</p>
-								<p><i class="icon-user-1">Funix</i></p>
-								<p><i class="icon-lamp">Developer</i></p>
+								<div class="pj-title">
+									<p><i class="icon-user-1 ">Funix</i></p>
+									<p><i class="icon-lamp ">Developer</i></p>
+								</div>
 							</div>
 							<!-- khối mô tả dự án -->
 							
@@ -394,8 +402,10 @@
 							<!-- khối chứa thông tin về thời gian -->
 							<div class="pj-time">
 								<p>2021</p>
-								<p><i class="icon-user-1">Funix</i></p>
-								<p><i class="icon-lamp">Developer</i></p>
+								<div class="pj-title">
+									<p><i class="icon-user-1 ">Funix</i></p>
+									<p><i class="icon-lamp ">Developer</i></p>
+								</div>
 							</div>
 							<!-- khối mô tả dự án -->
 							<div class="item1">

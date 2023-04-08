@@ -135,7 +135,7 @@ KHU VỰC CHỈNH THÔNG TIN CÁ NHÂN VÀ MỤC TIÊU NGHÊ NGHIỆP */
 
 /* chỉnh title cho hai mục thông tin và mục tiêu */
 .section-title {
-  margin: 45px 0;
+  padding: 45px 0;
   font-size: 34px;
 }
 
@@ -254,17 +254,21 @@ CĂN CHỈNH SECTION CHỨNG CHỈ GIẢI THƯỞNG */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  row-gap: 30px;
+  /* row-gap: 30px; */
   padding-bottom: 30px;
 }
-/* .award-grid {
-  display: grid;
-  grid-template-columns: 30% 70%;
-} */
+
 /* ĐỊNH NGHĨA KIỂU HIỂN THỊ CHO TẤT CẢ CÁC BOX */
 .award-info,
 .aw-3 {
   display: flex;
+  margin: 30px 30px 30px 0;
+}
+
+/* TẠO ĐƯỜNG KẺ BÊN DƯỚI */
+.aw-2,
+.aw-1 {
+  border-bottom: 2px solid var(--award-color);
 }
 
 /* TÙY CHỈNH CHO THÔNG TIN VỀ TÊN CHỨNG CHỈ */
@@ -281,16 +285,7 @@ CĂN CHỈNH SECTION CHỨNG CHỈ GIẢI THƯỞNG */
   line-height: 1.5;
 }
 
-/* TẠO ĐƯỜNG KẺ BÊN DƯỚI */
-.aw-2,
-.aw-1 {
-  border-bottom: 2px solid var(--award-color);
-}
 /*
-
-
-
-
 TÙY CHỈNH THUỘC TÍNH CHO CÁC DỰ ÁN*/
 .project-box {
   display: grid;
@@ -314,13 +309,13 @@ TÙY CHỈNH THUỘC TÍNH CHO CÁC DỰ ÁN*/
 .project-1 > *,
 .project-2 > *,
 .project-3 > * {
-  border: 2px solid rgba(128, 128, 128, 0.336);
+  border-top: 1px solid rgba(128, 128, 128, 0.336);
   border-collapse: collapse;
-  align-items: stretch;
 }
 
 /* chỉnh lại kích thước của hình ảnh minh họa các dự án */
 .pj-img {
+  padding: 4px;
   width: 100%;
   height: auto;
 }
@@ -331,23 +326,14 @@ TÙY CHỈNH THUỘC TÍNH CHO CÁC DỰ ÁN*/
   text-transform: uppercase;
 }
 
-.project-2 .item3 {
-  height: 71px;
-}
-.project-3 .item3 {
-  height: 95px;
-}
-/* căn chỉnh mục thời gian - Funix - nghề */
-.pj-time {
-  display: flex;
-  padding-left: 20px;
-}
-
 /* thụt thẻ p của mục pj-time vào 15px cho giống mẫu */
-.pj-time p {
-  margin: 15px;
+.pj-time {
+  padding: 10px 0 15px 25px;
 }
 
+.pj-title {
+  min-width: 177px;
+}
 /* chỉnh margin thẻ các thẻ p mục "Mô tả", "Nhiệm vụ", "Công nghệ"  */
 .project-box p {
   margin: 10px 0 10px 10px;
@@ -355,7 +341,8 @@ TÙY CHỈNH THUỘC TÍNH CHO CÁC DỰ ÁN*/
 
 /* chỉnh số 2021 cho gống mẫu */
 /* chọn thẻ con đầu tiên của lớp pj-time */
-.pj-time p:first-child {
+.pj-time > p:first-child {
+  margin-right: 20px;
   width: 70px;
   height: 30px;
   border: 2px solid var(--bg-blue);
@@ -434,31 +421,17 @@ footer i {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in;
 }
-
 /*
-
 
 
 
 chỉnh lại giao diện khi kích thước vượt qua 992px */
 @media screen and (min-width: 992px) {
-  /* TẠO ĐƯỜNG KẺ GIỮA BẰNG PHẦN TỬ GIẢ */
-  .aw-2::before {
-    content: "";
-    position: relative;
-    top: 0; /*vị trí của đường viền */
-    left: -13px;
-    width: 2px; /* Chiều rộng của đường viền */
-    height: 100%; /* Chiều cao của đường viền là 100% vì muốn ở bên phải toàn bộ div */
-    background-color: hsl(42, 47%, 70%); /* Màu sắc đường viền */
-  }
-
   /* chỉnh thuộc tính cho các chứng chỉ giải thưởng */
-  .award-info,
-  .aw-3 {
-    display: flex;
+  .aw-2 .award-info {
+    border-left: 2px solid var(--award-color);
+    padding-left: 30px;
   }
-
   /* CĂN CHỈNH CHO HÌNH ẢNH CHỨNG CHỈ */
   .award-img {
     width: 45%;
@@ -468,13 +441,17 @@ chỉnh lại giao diện khi kích thước vượt qua 992px */
     width: 100%;
     height: auto;
   }
-  /* TẠO KHOẢNG TRỐNG TRÊN - DƯỚI  CHO BOX 1 */
-  .aw-1 {
-    padding: 40px 0 40px;
+
+  /* căn chỉnh mục thời gian - Funix - nghề */
+  /* chỉ áp dụng cho màn hình laptop  và tablet */
+  .pj-time {
+    display: flex;
+    padding-left: 20px;
   }
 
-  /* TẠO KHOẢNG TRỐNG TRÊN DƯỚI - TRÁI PHẢI CHO BOX 2 */
-  .aw-2 {
-    padding: 40px 30px;
+  /* chỉnh cho "Funix", "Developer" nằm ngang trong giao diện laptop */
+  .pj-title {
+    display: flex;
+    margin-right: 20px;
   }
 }

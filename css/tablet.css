@@ -1,17 +1,15 @@
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  :root {
-    --solid-color: #ced4da;
-  }
-
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  /* chỉnh lại chiều rộng container */
   .container {
-    margin: 0;
-    padding: 0;
+    max-width: 990px;
+    margin: auto;
   }
 
+  /* xóa bỏ ảnh đại diện */
   .avatar {
     display: none;
   }
-
+  /* thu nhỏ kích thước ô navbar chứa avatar */
   .nv-name {
     flex-basis: 68px;
     width: 5%;
@@ -19,26 +17,31 @@
     padding: 38px 0;
   }
 
+  /* thêm border thẻ đầu và thẻ a cuối */
   .info-navbar a:first-child {
     border-left: 1px solid var(--solid-color);
   }
 
-  .info-navbar a {
+  .info-navbar a:last-child {
     border-right: 1px solid var(--solid-color);
   }
+
+  /* set lại chiều cao và thuộc tính của section - about */
   .job-info .row1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     height: 1580px;
   }
+
+  /* set up thuộc tính cho các cột của about */
   .job-info .col {
     flex: auto;
-    max-width: 50vw;
-    align-self: baseline;
+    max-width: 50%;
     padding: 14px;
   }
 
+  /* set thuộc tính, chia khối của khối lớn của Chứng chỉ - giải thưởng  */
   .award-detail {
     padding-left: 40px;
     display: grid;
@@ -47,21 +50,12 @@
     gap: 0;
     padding-bottom: 30px;
   }
-  .aw-2::before {
-    content: "";
-    position: relative;
-    top: 0; /*vị trí của đường viền */
-    left: -13px;
-    width: 2px; /* Chiều rộng của đường viền */
-    height: 100%; /* Chiều cao của đường viền là 100% vì muốn ở bên phải toàn bộ div */
-    background-color: hsl(42, 47%, 70%); /* Màu sắc đường viền */
-    z-index: 10;
-  }
+
+  /* class thuộc tính bên trong card từng chứng chỉ */
   .award-info,
   .aw-3 {
     display: block;
     width: 45vw;
-    /* flex-direction: column; */
   }
 
   /* CĂN CHỈNH CHO HÌNH ẢNH CHỨNG CHỈ */
@@ -69,24 +63,25 @@
     width: 100%;
   }
 
+  /* chỉnh kích thước cho hình ảnh chứng chỉ */
   .award-img img {
     width: 100%;
     height: auto;
   }
-  /* TẠO KHOẢNG TRỐNG TRÊN - DƯỚI  CHO BOX 1 */
-  .aw-1,
-  .aw-3 {
-    padding: 40px 0 40px;
+  /* thêm border giữa chứng chỉ 1 và chứng chỉ 2 */
+  .aw-2 .award-info {
+    border-left: 2px solid var(--award-color);
+    padding: 0 30px;
   }
 
-  /* TẠO KHOẢNG TRỐNG TRÊN DƯỚI - TRÁI PHẢI CHO BOX 2 */
-  .aw-2 {
-    padding: 40px 0 40px 0px;
+  /* căn chỉnh mục thời gian - Funix - nghề */
+  /* chỉ áp dụng cho màn hình laptop  và tablet */
+  .pj-time {
+    display: flex;
+    padding-left: 20px;
   }
 
-  .project-3 .item3 {
-    height: 119px;
-  }
+  /* custom chiều rộng class width */
   .w-11 {
     width: 77px !important;
   }
