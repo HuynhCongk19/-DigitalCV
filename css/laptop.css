@@ -3,7 +3,8 @@
   --solid-color: #ced4da;
   --target-color: #dee2e67b;
   --personal-info: #dee2e6a9;
-  --text-color: #495057;
+  --text-color: #868e96;
+  --text-gray8: #343a40;
   --award-color: #d6c08d;
   --bg-blue: #1c7ed6;
   --bg-blue-100: #90cfed;
@@ -15,11 +16,15 @@
 }
 /* CHỈNH LẠI MÀU CHO VĂN BẢN */
 a,
-p,
-h1 {
+p {
   color: var(--text-color);
 }
-
+.gray-6 {
+  color: var(--text-color);
+}
+.gray-8 {
+  color: var(--text-gray8);
+}
 /* tạo class màu nền */
 .bg-blue {
   background-color: var(--bg-blue);
@@ -194,17 +199,13 @@ PHẦN TÙY CHỈNH CHO CÁC KINH NGHIỆM - HỌC VẤN - HOẠT ĐỘNG
   margin: -17px 0 0 -20px;
 }
 
-/* đổi màu cho các icon cho phù hợp */
-.icon-hoppy i {
-  color: var(--solid-color);
-}
-
 /* tạo đường tròn bao bên ngoài các icon */
 .ic-icon {
   width: 50px;
   height: 50px; /*chỉnh kích thước của hình tròn */
   border-radius: 50%; /*50% để tạo viền thành hình tròn  */
   border: 2px solid var(--bg-blue-100);
+  color: var(--bg-blue-100); /*đổi màu các icon cho phù hợp*/
   text-align: center; /*căn giữa cho các icon bên trong8*/
   padding-top: 15px; /* căn theo chiều dọc để icon vô giữa*/
 }
