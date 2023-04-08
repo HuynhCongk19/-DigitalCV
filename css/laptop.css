@@ -303,6 +303,7 @@ TÙY CHỈNH THUỘC TÍNH CHO CÁC DỰ ÁN*/
   display: grid;
   grid-template-columns: 25% 75%;
   line-height: 1.5;
+  padding: 5px;
 }
 
 /* tạo khung cho các thông tin */
