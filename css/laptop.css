@@ -108,7 +108,7 @@ CĂN CHỈNH CHO NAVBAR */
 
 /* tùy chỉnh thuộc tính cho ảnh đại diện */
 .avatar {
-  transform: scale(8);
+  transform: scale(7);
   z-index: 3;
   width: 30px;
   height: auto;
